@@ -103,6 +103,7 @@ body {
   box-shadow: 0px 0px 10px 2px #ea580c;
 }
 #Home {
+  margin-top: 10px;
   height: 100vh;
   display: flex;
   margin-left: 10%;
@@ -111,12 +112,13 @@ body {
   align-items: center;
 }
 #Home .content {
-  text-align: right;
-  max-width: 30%;
+  width: 50%;
+  text-align: left;
+
   display: flex;
   flex-direction: column;
   gap: 1em;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 #Home .content h1 {
   font-size: 3em;
@@ -143,6 +145,7 @@ body {
   color: var(--text-color);
   font-size: 15px;
   line-height: 1.5;
+  width: 80%;
 }
 #Home .content .social {
   text-align: right;
@@ -200,7 +203,7 @@ body {
   box-shadow: 0 0 6px 1px #ea580c;
 }
 #Home img {
-  height: 400px;
+  height: 300px;
   border-radius: 50%;
   box-shadow: 1px 1px 8px 4px #ea580c;
   transition: 0.3s ease-in-out;
@@ -214,13 +217,12 @@ body {
   align-items: center;
   margin-left: 10%;
   margin-right: 10%;
-  margin-bottom: 5%;
-  margin-top: 20%;
+  
   justify-content: space-evenly;
 }
 #About img {
   margin-top: 10px;
-  width: 40%;
+  width: 35%;
   border-radius: 50%;
   box-shadow: 1px 1px 8px 4px #ea580c;
   transition: 0.3s ease-in-out;
@@ -267,61 +269,78 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2em;
-  padding-top: 6%;
+  gap: 1em;
+  margin: 0% 5%;
+  margin-top: 5%;
+  
 }
 #Services h1 {
   color: white;
-  font-size: 60px;
+  font-size: 50px;
 }
 #Services .grid {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 10%;
   gap: 2em;
 }
 #Services .grid .one {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   border-radius: 16px;
   border: 3px solid #ea580c;
   color: #ea580c;
   background-color: var(--bgs);
   gap: 1em;
-  padding: 3em 2.5em;
-  height: 500px;
+  padding: 20px;
+  height: 100%;
 }
 #Services .grid .one i {
   font-size: 50px;
 }
 #Services .grid .one h3 {
-  font-size: 40px;
+  font-size: 30px;
 }
 #Services .grid .one p {
   text-align: center;
 }
 #Services .grid .two {
   display: flex;
+  padding: 20px ;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
   background-color: #ea580c;
   border-radius: 16px;
-  padding: 3em 2.5em;
-  height: 500px;
   gap: 1em;
 }
 #Services .grid .two i {
   font-size: 50px;
 }
 #Services .grid .two h3 {
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
 }
 #Services .grid .two p {
+  text-align: center;
+}
+#Services .grid .three {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ea580c;
+  border-radius: 16px;
+  gap: 1em;
+}
+#Services .grid .three i {
+  font-size: 50px;
+}
+#Services .grid .three h3 {
+  font-size: 30px;
+  text-align: center;
+}
+#Services .grid .three p {
   text-align: center;
 }
 #Projects {
@@ -330,15 +349,15 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 10%;
+  margin-top: 12%;
   gap: 1em;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 5%;
 }
 
 #Projects h1 {
   color: white;
-  font-size: 3em;
+  font-size: 2.5em;
+  
 }
 #Projects .grid2 {
   display: grid;
@@ -347,25 +366,26 @@ body {
 }
 #Projects .grid2 div {
   display: flex;
+  padding: 15px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1em 2em;
-  gap: 2em;
+  gap: 1em;
   border-radius: 20px;
   border: 3px solid #ea580c;
 }
 #Projects .grid2 div h3 {
   color: white;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 25px;
 }
 #Projects .grid2 div p {
   color: white;
   text-align: center;
+  font-size: 10px;
 }
 #Projects .grid2 div button {
-  font-size: 15px;
+  font-size: 12px;
   padding: 10px 15px;
   border-radius: 20px;
   background-color: #ea580c;
@@ -380,7 +400,7 @@ body {
 }
 
 #Projects .grid2 img {
-  height: 200px;
+  height: 130px;
   border-radius: 10px;
 }
 #Contact {
@@ -390,12 +410,12 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2em;
-  padding-left: 10%;
-  padding-right: 10%;
+  margin: 0 auto;
+  margin-top: 10px;
 }
 #Contact h1 {
   color: white;
-  font-size: 3em;
+  font-size: 2.5em;
 }
 #Contact span {
   background: linear-gradient(270deg, #df8908 10%, #ff1d15 100%);
@@ -461,11 +481,11 @@ body {
 footer {
   height: 200px;
   background-color: var(--bg);
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
 }
 footer .socials {
   display: flex;
@@ -476,32 +496,32 @@ footer .socials {
 footer .socials i {
   font-size: 25px;
   color: var(--main-color);
-border: 1px solid var(--main-color);
-border-radius: 50%;
-padding: 5px;
-cursor: pointer;
-transition: .3s ease-in-out;
+  border: 1px solid var(--main-color);
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 footer .socials i:hover {
-transform: scale(1.1);
-box-shadow: 0 0 5px 2px #ea580c;
-color: white;
+  transform: scale(1.1);
+  box-shadow: 0 0 5px 2px #ea580c;
+  color: white;
 }
-footer  .info {
+footer .info {
   display: flex;
   align-items: center;
   gap: 1em;
   font-size: 15px;
   margin-top: 4px;
 }
-footer  .info a {
+footer .info a {
   color: white;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
-footer  .info a:hover {
+footer .info a:hover {
   transform: scale(1.1);
 }
-footer   .line {
+footer .line {
   width: 100%;
   height: 2px;
   background-color: white;
